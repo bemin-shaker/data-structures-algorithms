@@ -30,15 +30,37 @@ function selectionSort(arr) {
   return arr;
 }
 
+//Merge two sorted arrays
+function mergeSort(arr1, arr2) {
+  let newArr = [];
+  let pointer1 = 0;
+  let pointer2 = 0;
+
+  while (pointer1 < arr1.length && pointer2 < arr2.length) {
+    if (arr1[pointer1] < arr2[pointer2]) {
+      newArr.push(arr1[pointer1]);
+      pointer1++;
+    } else {
+      newArr.push(arr2[pointer2]);
+      pointer2++;
+    }
+  }
+
+  while (pointer1 < arr1.length) {
+    newArr.push(arr1[pointer1]);
+    pointer1++;
+  }
+
+  while (pointer2 < arr2.length) {
+    newArr.push(arr2[pointer2]);
+    pointer2++;
+  }
+
+  return newArr;
+}
+
 function quickSort(arr) {}
-function mergeSort(arr) {}
+
 function heapSort(arr) {}
 
-module.exports = {
-  swap,
-  bubbleSort,
-  selectionSort,
-  quickSort,
-  mergeSort,
-  heapSort,
-};
+console.log(mergeSort([1, 5], [4, 6, 7, 10, 12]));

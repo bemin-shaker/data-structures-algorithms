@@ -21,8 +21,6 @@ const stack = new Stack();
 
 stack.push(5);
 stack.push(5);
-stack.push(5);
-stack.push(5);
 
 const foo = stack.pop;
 console.log(foo);

@@ -20,6 +20,23 @@ class LinkedList {
     this.head = newNode;
     this.length++;
   }
+
+  getFirst() {
+    return this.head;
+  }
+
+  getLast() {
+    let current = this.head;
+    while (current.next) {
+      current = current.next;
+    }
+    return current;
+  }
 }
 
-module.exports = LinkedList;
+let newLL = new LinkedList();
+
+newLL.unshift(2);
+newLL.unshift(2);
+
+console.log(newLL.getLast());
