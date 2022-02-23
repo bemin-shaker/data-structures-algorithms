@@ -1,21 +1,25 @@
 class Stack {
   constructor() {
     this.data = [];
-    this.top = 0;
   }
 
-  push(element) {
-    this.data[this.top] = element;
-    this.top++;
+  //Add item to start of array
+  push(item) {
+    this.data.unshift(item);
   }
 
-  peek() {
-    //return this.data[this.top - 1];
+  //Remove from start of array
+  pop() {
     return this.data.shift();
   }
 
-  pop() {
-    return this.data.pop();
+  //Return first element in array
+  peek() {
+    return this.data[0];
+  }
+
+  isEmpty() {
+    return this.data.length === 0;
   }
 }
 
@@ -26,3 +30,4 @@ stack.push(4);
 
 console.log(stack);
 console.log(stack.peek());
+console.log(stack.isEmpty());
