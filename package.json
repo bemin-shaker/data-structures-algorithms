@@ -4,7 +4,7 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-    "start": "node arrays.js",
+    "start": "node hashTables.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
