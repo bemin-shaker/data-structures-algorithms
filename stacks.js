@@ -4,27 +4,25 @@ class Stack {
     this.top = 0;
   }
 
-  push(obj) {
-    let val = (this.data[this.top] = obj);
+  push(element) {
+    this.data[this.top] = element;
     this.top++;
-    return val;
   }
+
   peek() {
-    return this.store[this.top];
+    //return this.data[this.top - 1];
+    return this.data.shift();
   }
+
   pop() {
-    return this.store[--this.top];
+    return this.data.pop();
   }
 }
 
-const stack = new Stack();
+let stack = new Stack();
 
 stack.push(5);
-stack.push(5);
+stack.push(4);
 
-const foo = stack.pop;
-console.log(foo);
-
-// const normalStack = [];
-// normalStack.push(5);
-// console.log(normalStack);
+console.log(stack);
+console.log(stack.peek());
