@@ -42,6 +42,12 @@ class ChainingHashTable {
 
   set(key, value) {
     let id = this.hashStringToInt(key);
+
+    if (this.table[id] === undefined) {
+      this.table[id] = [];
+    }
+
+    return this.table[id].push([key, value]);
   }
 
   get(key) {
@@ -98,7 +104,7 @@ class LinearProbingHashTable {
 }
 
 //const table = new HashTable();
-const table = new LinearProbingHashTable();
+const table = new ChainingHashTable();
 
 table.set("firstName", "bob");
 table.set("lastName", "tim");
@@ -106,9 +112,9 @@ table.set("lastName", "tim");
 console.log(table);
 
 //JavaScript Built-in Map data structure
-const items = new Map([
-  [1, { firstName: "John" }],
-  [2, { lastName: "Mary" }],
-]);
+// const items = new Map([
+//   [1, { firstName: "John" }],
+//   [2, { lastName: "Mary" }],
+// ]);
 
 //console.log(items);

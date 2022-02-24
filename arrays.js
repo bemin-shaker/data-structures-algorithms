@@ -1,4 +1,5 @@
 let array = [1, 2, 3];
+console.log(Math.max(...array));
 
 //Add element to the end of the array
 array.push(4);
@@ -34,7 +35,9 @@ array.reverse();
 console.log(array);
 
 //Creates array feom string
-let str = Array.from("test");
+let arr = Array.from("test");
+let arr2 = "test".split("");
 
 //Combines all elements from array separated by the reducer/parameter
-console.log(str.join(""));
+console.log(arr.join(""));
+console.log(arr2.join(""));
