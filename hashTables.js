@@ -42,12 +42,6 @@ class ChainingHashTable {
 
   set(key, value) {
     let id = this.hashStringToInt(key);
-
-    if (this.table[id]) {
-      this.table[id].push([key, value]);
-    } else {
-      this.table[id] = [[key, value]];
-    }
   }
 
   get(key) {
