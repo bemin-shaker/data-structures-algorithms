@@ -3,11 +3,12 @@ Complexity (Big-O analysis) of Algorithms:
 - Traveling salesman & knapsack problem
 
 Sorting:
-- Bubble sort
-- Insertion sort
-- Merge Sort   n*log(n)
-- Quicksort   n*log(n)
-- Heap sort
+- Bubble sort  -  Best: O(n)  Worst: O(n^2)
+- Selection sort  -  O(n^2)
+- Insertion sort  -  Best: O(n)  Worst: O(n^2)
+- Merge Sort  -  O(n*log(n))
+- Quicksort  -  Best: O(n*log(n))  Worst: O(n^2)
+
 
 
 Data Structures:

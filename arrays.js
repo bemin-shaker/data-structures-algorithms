@@ -16,6 +16,7 @@ array.pop();
 
 //Returns section of array
 array.slice(0, 2);
+console.log(array.slice());
 
 //Calls callback function on each element in array
 array.map((element) => element * 2);
