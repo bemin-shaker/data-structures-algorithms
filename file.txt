@@ -2,6 +2,7 @@ Complexity (Big-O analysis) of Algorithms:
 - NP-complete
 - Traveling salesman & knapsack problem
 
+
 Sorting:
 - Bubble sort  -  Best: O(n)  Worst: O(n^2)
 - Selection sort  -  O(n^2)
@@ -10,12 +11,11 @@ Sorting:
 - Quicksort  -  Best: O(n*log(n))  Worst: O(n^2)
 
 
-
 Data Structures:
 - Arrays
 - Hashtables & maps
 - LinkedLists
 - Stacks
-- Trees
+- Trees O(n) Average: O(logn)
 - Queues/priority queues
 - Graphs

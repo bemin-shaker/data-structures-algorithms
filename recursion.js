@@ -14,6 +14,3 @@ function power(num, pwr) {
     return num * power(num, pwr - 1);
   }
 }
-module.exports = {
-  power,
-};
